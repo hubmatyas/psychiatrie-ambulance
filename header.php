@@ -1,13 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
-
-
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+	<?php if(is_front_page()){
+        echo "Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy";
+    } else{
+        wp_title(''); echo ' | ';  bloginfo( 'name' );
+    }?>
+    </title>
 	<!--
 
 Site author: Matyáš Hub
 Contact: hubmatyas@gmail.com
+GitHub: https://github.com/hubmatyas/psychiatrie-ambulance
 
  _           _                     _                             
 | |__  _   _| |__  _ __ ___   __ _| |_ _   _  __ _ ___   ___ ____
@@ -17,21 +24,12 @@ Contact: hubmatyas@gmail.com
                                        |___/                     
 
 -->
-  <?php wp_head(); ?>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-    <title>
-	<?php if(is_front_page()){
-        echo "Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy";
-    } else{
-        wp_title(''); echo ' | ';  bloginfo( 'name' );
-    }?>
-</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
   <script src="/wp-content/themes/psychiatric/res/js/main.js"></script>
-  <link rel="stylesheet" href="/wp-content/themes/psychiatric/res/css/print.css" type="text/css" media="print" />
   <meta property="og:image" content="/wp-content/uploads/2020/10/homepage.png" />
+  <?php wp_head(); ?>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3LY67WLWZ"></script>
