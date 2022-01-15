@@ -4,7 +4,7 @@
 
 function load_stylesheets()
 {
-  wp_register_style('main', get_template_directory_uri() . '/res/css/main.css', array(), false, 'all');
+  wp_register_style('main', get_bloginfo('template_directory') . '/style.css', array(), false, 'all');
   wp_enqueue_style('main');
 }
   add_action('wp_enqueue_scripts', 'load_stylesheets');

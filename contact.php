@@ -22,7 +22,7 @@ get_header();
 			<br><br>Ozveme se Vám zpět co nejrychleji!
 		</p>
 	</div>
-	<img class="sms-notion-image" src="https://psychiatrie-ambulance.cz/wp-content/uploads/2021/02/sms-notion-ilustrace.svg" alt="Vyskakovací okno - ilustrace SMS">
+	<img class="sms-notion-image" src="/wp-content/uploads/2021/02/sms-notion-ilustrace.svg" alt="Vyskakovací okno - ilustrace SMS">
 </div>
 </div>
 

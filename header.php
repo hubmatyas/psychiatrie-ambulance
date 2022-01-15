@@ -27,7 +27,6 @@ GitHub: https://github.com/hubmatyas/psychiatrie-ambulance
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-  <script src="/wp-content/themes/psychiatric/res/js/main.js"></script>
   <meta property="og:image" content="/wp-content/uploads/2020/10/homepage.png" />
   <?php wp_head(); ?>
 	
