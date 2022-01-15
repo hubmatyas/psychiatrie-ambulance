@@ -56,4 +56,10 @@ window.onload = () => {
         }, 2000);
     }
 
+    // Google Maps Init
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-W3LY67WLWZ');
 };
