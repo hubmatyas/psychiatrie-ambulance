@@ -71,19 +71,19 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUEVlByzT8CL183iWpsB3yKLb
       var markers = [
         {
           coords:{lat:49.7536835,lng:13.3769782},
-          content:'<h1>Plzeň, Rondel</h1>'
+              content:'<div class="map-box"><strong>Plzeň, Rondel</strong><p>Lochotínská 18, 301 00 Plzeň 1</p><a href="">Zobrazit v mapách google</a></div>'
         },
         {
           coords:{lat:49.7307896,lng:13.3986162},
-          content:'<h1>Plzeň, Slovany</h1>'
+          content:'<div class="map-box"><strong>Plzeň, Slovany</strong><p>Lochotínská 18, 301 00 Plzeň 1</p><a href="">Zobrazit v mapách google</a></div>'
         },
         {
           coords:{lat:49.8179884,lng:13.3920277},
-          content:'<h1>Třemošná</h1>'
+          content:'<div class="map-box"><strong>Třemošná</strong><p>Zálužská 138, 330 11 Třemošná</p><a href="">Zobrazit v mapách google</a></div>'
         },
         {
           coords:{lat:49.9346361,lng:13.3992181},
-          content:'<h1>Plasy</h1>',
+          content:'<div class="map-box"><strong>Plasy</strong><p>Potoční 546, 331 01 Plasy</p><a href="">Zobrazit v mapách google</a></div>',
         }
       ];
 
