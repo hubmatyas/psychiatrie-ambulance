@@ -28,23 +28,23 @@
   <section class="dashboard">
     <h3 class="commonTitle">O nás - Psychiatrie - Ambulance s.r.o.</h3>
     <div>
-      <img src="/wp-content/themes/psychiatric/res/svg/icons/brain.svg" alt="Ikona - Psychiatrie Ambulance">
+      <img width="200" height="200" src="/wp-content/themes/psychiatric/res/svg/icons/brain.svg" alt="Ikona - Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči.">
       <p>Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči.</p>
     </div>
     <div>
-      <img src="/wp-content/themes/psychiatric/res/svg/icons/partners.svg" alt="Ikona - Psychiatrie Ambulance">
+      <img width="200" height="200" src="/wp-content/themes/psychiatric/res/svg/icons/partners.svg" alt="Ikona - Jsme partnery všech zdravotních pojišťoven a partneři CDZ Plzeň">
       <p>Jsme partnery všech zdravotních pojišťoven a partneři CDZ Plzeň</p>
     </div>
     <div>
-      <img src="/wp-content/themes/psychiatric/res/svg/icons/insurance.svg" alt="Ikona - Psychiatrie Ambulance">
+      <img width="200" height="200" src="/wp-content/themes/psychiatric/res/svg/icons/insurance.svg" alt="Ikona - Všechny naše výkony jsou hrazeny zdravotními pojišťovnami">
       <p>Všechny naše výkony jsou hrazeny zdravotními pojišťovnami</p>
     </div>
     <div>
-      <img src="/wp-content/themes/psychiatric/res/svg/icons/capacity.svg" alt="Ikona - Psychiatrie Ambulance">
+      <img width="200" height="200" src="/wp-content/themes/psychiatric/res/svg/icons/capacity.svg" alt="Ikona - Díky naší kapacitě můžeme registrovat nové pacienty">
       <p>Díky naší kapacitě můžeme registrovat nové pacienty</p>
     </div>
     <div>
-      <img src="/wp-content/themes/psychiatric/res/svg/icons/ambulance.svg" alt="Ikona - Psychiatrie Ambulance">
+      <img width="200" height="200" src="/wp-content/themes/psychiatric/res/svg/icons/ambulance.svg" alt="Ikona - Pracujeme ve čtyřech ambulancích a péči poskytuje našich pět lékařů">
       <p>Pracujeme ve čtyřech ambulancích a péči poskytuje našich pět lékařů</p>
     </div>
   </section>
