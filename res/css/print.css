@@ -1,0 +1,11 @@
+@import url('/wp-content/themes/psychiatric/res/css/main.css');
+
+
+* {
+  font-size: 11pt !important;
+  margin-bottom: 0;
+}
+
+.landing {
+  height: 100px;
+}
