@@ -21,8 +21,8 @@
 </div>
 
     <?php if (is_front_page()):?>
-	<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUEVlByzT8CL183iWpsB3yKLbSfHZ4qFM&map_ids=54220ee84d2e31ca" async></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUEVlByzT8CL183iWpsB3yKLbSfHZ4qFM&map_ids=54220ee84d2e31ca" async></script>
+    <script src="/wp-content/themes/psychiatric/res/init-map.js"></script>
 <?php endif; ?>
   <script src="/wp-content/themes/psychiatric/res/main.js"></script>
 </script>

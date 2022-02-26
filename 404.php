@@ -1,13 +1,8 @@
 <?php
 
-/*
+get_header(); 
 
-Template Name: Error page
-
-*/
-
-
-get_header(); ?>
+?>
 
 
 <div class="wrapper">

@@ -89,7 +89,7 @@ function hideNow(e) {
   <div>
     <p>Mgr. Václav Sýkora</p>
     <p>Jednatel firmy</p>
-    <p>+420 602 350 018</p>
+    <p>&nbsp;</p>
   </div>
 </div>
 

@@ -35,14 +35,14 @@
 		<!-- OpenGraph -->
 		<meta name="content-language" content="cs">
 		<meta property="og:title" content="Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy">
-		<meta property="og:image" content="/wp-content/uploads/2022/01/og-image-2022.jpg">
+		<meta property="og:image" content="https://www.psychiatrie-ambulance.cz/wp-content/uploads/2022/01/og-image-2022.jpg">
 		<meta property="og:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Díky naší kapacitě můžeme registrovat nové pacienty.">
-		<meta property="og:site_name" content="Profishot.cz">
+		<meta property="og:site_name" content="Psychiatrie-Ambulance.cz">
 		<meta property="og:type" content="website">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy">
 		<meta name="twitter:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Díky naší kapacitě můžeme registrovat nové pacienty.">
-		<meta name="twitter:image" content="./assets/images/og-image.jpg">
+		<meta name="twitter:image" content="https://www.psychiatrie-ambulance.cz/wp-content/uploads/2022/01/og-image-2022.jpg">
 		<meta name="format-detection" content="telephone=no">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->

@@ -97,3 +97,15 @@ function new_excerpt_more( $more ) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+add_action('template_redirect', 'my_custom_disable_author_page');
+
+function my_custom_disable_author_page() {
+    global $wp_query;
+
+    if ( is_author() ) {
+        wp_redirect(get_option('home'), 301); 
+        exit; 
+    }
+}
