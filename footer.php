@@ -6,10 +6,16 @@
 <footer>
   <div class="wrapper">
 
-  <!-- <p>Email:</p> -->
-  <a href="mailto:psychiatrie.ambulance.sro@gmail.com">psychiatrie.ambulance.sro@gmail.com</a><br>
-  <!-- <p>Tel. - jednatel společnosti - Mgr. Václav Sýkora</p> -->
-  <a href="tel:+420602350018">+420 602 350 018</a>
+    <ul>
+      <li><a href="mailto:psychiatrie.ambulance.sro@gmail.com">psychiatrie.ambulance.sro@gmail.com</a></li>
+      <li><a href="tel:+420602350018">+420 602 350 018</a></li>
+    </ul>
+
+    <address>
+      Psychiatrie-ambulance s.r.o.<br>
+      Lochotínská 1108/18, Severní Předměstí, 301 00 Plzeň<br>
+      IČO: 01695525
+    </address>
 
 </div>
 

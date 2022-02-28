@@ -6,14 +6,14 @@
 			Site author: Matyáš Hub
 			Contact: hubmatyas@gmail.com
 			GitHub: https://github.com/hubmatyas/psychiatrie-ambulance
-			
-			 _           _                     _                             
+
+			 _           _                     _
 			| |__  _   _| |__  _ __ ___   __ _| |_ _   _  __ _ ___   ___ ____
 			| '_ \| | | | '_ \| '_ ` _ \ / _` | __| | | |/ _` / __| / __|_  /
-			| | | | |_| | |_) | | | | | | (_| | |_| |_| | (_| \__ \| (__ / / 
+			| | | | |_| | |_) | | | | | | (_| | |_| |_| | (_| \__ \| (__ / /
 			|_| |_|\__,_|_.__/|_| |_| |_|\__,_|\__|\__, |\__,_|___(_)___/___|
-			                                       |___/                     
-			
+			                                       |___/
+
 		-->
 
 		<meta charset="UTF-8">
@@ -25,23 +25,23 @@
 				wp_title(''); echo ' | ';  bloginfo( 'name' );
 				}?>
 		</title>
-		<meta name="description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Díky naší kapacitě můžeme registrovat nové pacienty.">
+		<meta name="description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Všechny naše výkony jsou hrazeny zdravotními pojišťovnami.">
 
-<!-- Connect Google Fonts (Poppins) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- Connect Google Fonts (Poppins) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 		<!-- OpenGraph -->
 		<meta name="content-language" content="cs">
 		<meta property="og:title" content="Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy">
 		<meta property="og:image" content="https://www.psychiatrie-ambulance.cz/wp-content/uploads/2022/01/og-image-2022.jpg">
-		<meta property="og:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Díky naší kapacitě můžeme registrovat nové pacienty.">
+		<meta property="og:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Všechny naše výkony jsou hrazeny zdravotními pojišťovnami.">
 		<meta property="og:site_name" content="Psychiatrie-Ambulance.cz">
 		<meta property="og:type" content="website">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Psychiatrie - Ambulance s.r.o. | Plzeň, Třemošná a Plasy">
-		<meta name="twitter:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Díky naší kapacitě můžeme registrovat nové pacienty.">
+		<meta name="twitter:description" content="Poskytujeme psychiatrickou, psychologickou a psychoterapeutickou péči. Všechny naše výkony jsou hrazeny zdravotními pojišťovnami.">
 		<meta name="twitter:image" content="https://www.psychiatrie-ambulance.cz/wp-content/uploads/2022/01/og-image-2022.jpg">
 		<meta name="format-detection" content="telephone=no">
 
@@ -51,10 +51,9 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<header>
+		<div class="main-navigation">
 			<div class="wrapper">
-				<div class="logo">
-					<a href="/">
+					<a href="/" class="logo">
 						<svg
 							viewBox="0 0 62.7 23.41">
 							<path d="M1.07,5.31V8.65H0V.12H2.72A2.46,2.46,0,0,1,4.59.83a2.64,2.64,0,0,1,.68,1.89,2.62,2.62,0,0,1-.65,1.9,2.54,2.54,0,0,1-1.83.69Zm0-.92H2.72A1.35,1.35,0,0,0,3.81,4,1.76,1.76,0,0,0,4.2,2.73,1.86,1.86,0,0,0,3.8,1.5,1.33,1.33,0,0,0,2.72,1H1.07Z" />
@@ -84,17 +83,15 @@
 								height="61.75"
 								transform="translate(42.4 -19.36) rotate(90)" />
 						</svg>
-					</a>
-				</div>
+				</a>
 				<nav id="menu">
 					<a onclick="closeNav()" id="menuClose">&#x2715;</a>
 					<!-- <a href="/aktuality/">aktuality</a> -->
-					<a href="/napiste-nam/" <?php if(is_page('napiste-nam')):?>class="active"<?php endif; ?>>Napište nám</a>
-					<a href="/ordinacni-hodiny/" <?php if(is_page('ordinacni-hodiny')):?>class="active"<?php endif; ?>>Ordinační hodiny</a>
-					<a href="/kontakt/" <?php if(is_page('kontakt')):?>class="active"<?php endif; ?>>Kontakt</a>
+					<a href="/napiste-nam/" class="btn <?php if(is_page('napiste-nam')):?>active<?php endif; ?>">Napište nám</a>
+					<a href="/ordinacni-hodiny/" class="btn <?php if(is_page('ordinacni-hodiny')):?>active<?php endif; ?>">Ordinační hodiny</a>
+					<a href="/kontakt/" class="btn <?php if(is_page('kontakt')):?>active<?php endif; ?>">Kontakt</a>
 				</nav>
 				<span id="menuToggle" onclick="openNav()">&#9776;</span>
 			</div>
-			<!-- wrapper -->
-		</header>
+		</div>
 		<div class="content">

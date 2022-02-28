@@ -6,9 +6,6 @@ function showDiv(idInfo) {
   document.getElementById('day'+idInfo).style.display = 'block';
 }
 
-console.log('this works');
-
-
 function openNav() {
   document.getElementById("menu").classList.add("active");
   document.getElementById("menuToggle").classList.add("show");
@@ -40,7 +37,16 @@ const consentPropertyName = 'gdpr_consent';
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
+
+var nav = document.querySelector('.main-navigation');
+var content = document.querySelector('.content');
+
 window.onload = () => {
+
+    if (content != null) {
+      let navHeight = nav.offsetHeight;
+      content.style.marginTop = navHeight + "px";
+    }
 
     const acceptFn = event => {
         saveToStorage(storageType);
@@ -66,4 +72,3 @@ window.onload = () => {
 
 
 }; // end window onload
-
