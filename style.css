@@ -596,14 +596,39 @@ footer a:hover {
      transition: 0.2s all ease-in-out;
      outline: none;
 }
+.list-authors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  margin-top: 3.6rem;
+}
+.list-authors-box .box-title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--grey);
+  border-bottom: 0;
+  font-weight: 500;
+}
+.list-authors-box .box-info {
+  font-weight: 400;
+  color: var(--grey);
+  opacity: 0.8;
+  min-height: 6rem;
+  margin-top: 0.8rem;
+}
  .list-authors {
-     margin-top: 3.6rem;
+   margin-top: 1.2rem;
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: flex-start;
      flex-wrap: wrap;
      row-gap: 1.6rem;
      column-gap: 1.6rem;
+}
+.list-authors.admin {
+  margin-top: 21.2rem;
+  grid-column: span 2;
+  justify-content: center;
 }
  .author {
      display: inline-block;
@@ -616,6 +641,7 @@ footer a:hover {
      -webkit-border-radius: .3em;
      -moz-border-radius: .3em;
      border-bottom: 1px solid var(--blue);
+     background: #fff;
      color: var(--grey);
      cursor: default;
      text-align: center;
@@ -872,10 +898,12 @@ footer a:hover {
     }
 }
 /* media screen */
- @media screen and (max-width: 1200px) {
-     .wrapper {
-         max-width: 800px;
-    }
+@media only screen and (max-width: 1000px) {
+  .list-authors-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.6rem;
+  }
 }
  @media screen and (max-width: 900px) {
      header {
@@ -952,10 +980,6 @@ footer a:hover {
          text-align: right;
          font-size: 2em;
          font-weight: 600;
-    }
-     .list-authors .author {
-         display: block;
-         width: 100%;
     }
 }
  @media screen and (max-width: 700px) {
@@ -1065,4 +1089,11 @@ footer a:hover {
     padding: 1.8rem 0;
     font-weight: 400;
   }
+  .list-authors .author {
+      display: block;
+      width: 100%;
+ }
+ .list-authors-box .box-info {
+   min-height: auto;
+ }
 }

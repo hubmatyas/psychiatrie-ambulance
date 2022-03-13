@@ -55,49 +55,76 @@ function hideNow(e) {
 
 <h1 class="title">Kontakt</h1>
 
-<div class="list-authors">
+<div class="list-authors-wrapper">
+	<div class="list-authors-box">
+		<h2 class="box-title">Psychologové</h2>
+		<p class="box-info">Psychoterapie, diagnostika, krizová intervence</p>
+		<div class="list-authors psychologists">
 
-<?php
-  $args = [
-    'blog_id' => 1,
-    'role__not_in' => ['administrator'],
-    'orderby' => 'nicename',
-    'order' => 'DESC',
-    'fields' => 'all',
-];
+		<?php
+		  $args = [
+		    'blog_id' => 1,
+		    'role' => 'author',
+				'meta_key' => 'last_name',
+    		'orderby' => 'meta_value',
+		    'order' => 'ASC',
+		    'fields' => 'all',
+		];
+		  $users = get_users($args);
+		  foreach ($users as $user) { ?>
+		<div class="author">
+		<?php echo get_avatar($user->ID);?>
+		<div>
+		    <p><?php echo get_the_author_meta('first_name', $user->ID); echo '&nbsp;'; echo get_the_author_meta('last_name', $user->ID) ?></p>
+		    <p><?php echo get_the_author_meta('author', $user->ID); ?></p>
+			<p><?php echo $user->description; ?></p>
+		</div>
+		</div>
+	<?php } // end foreach?>
+		</div> <!-- .list-authors -->
+	</div>
 
-  $users = get_users($args);
-  foreach ($users as $user) { ?>
+<div class="list-authors-box">
+	<h2 class="box-title">Psychiatři</h2>
+	<p class="box-info">Psychiatrické vyšetření, medikace léčivých přípravků, pouze pro plnoleté, psychoterapie</p>
+	<div class="list-authors psychiatrists">
 
-<div class="author">
-
-
-
-<?php echo get_avatar($user->ID);?>
-<div>
-    <p><?php echo get_the_author_meta('first_name', $user->ID); echo '&nbsp;'; echo get_the_author_meta('last_name', $user->ID) ?></p>
-    <p><?php echo get_the_author_meta('author', $user->ID); ?></p>
-	<p><?php echo $user->description; ?></p>
+	<?php
+		$args = [
+			'blog_id' => 1,
+			'role' => 'editor',
+			'meta_key' => 'last_name',
+			'orderby' => 'meta_value',
+			'order' => 'ASC',
+			'fields' => 'all',
+	];
+		$users = get_users($args);
+		foreach ($users as $user) { ?>
+	<div class="author">
+	<?php echo get_avatar($user->ID);?>
+	<div>
+			<p><?php echo get_the_author_meta('first_name', $user->ID); echo '&nbsp;'; echo get_the_author_meta('last_name', $user->ID) ?></p>
+			<p><?php echo get_the_author_meta('author', $user->ID); ?></p>
+		<p><?php echo $user->description; ?></p>
+	</div>
+	</div>
+	<?php } // end foreach?>
+	</div> <!-- .list-authors -->
 </div>
 
+	<div class="list-authors admin">
+		<div class="author">
+		  <img src="/wp-content/uploads/2020/10/vaclav-sykora.png" alt="Václav Sýkora - Psychiatrie Ambulance s.r.o.">
+		  <div>
+		    <p>Mgr. Václav Sýkora</p>
+		    <p>Jednatel firmy</p>
+		    <p>&nbsp;</p>
+		  </div>
+		</div>
+	</div>
 </div>
-<?php } // end foreach?>
 
 
-<div class="author">
-  <img src="/wp-content/uploads/2020/10/vaclav-sykora.png" alt="Václav Sýkora - Psychiatrie Ambulance s.r.o.">
-  <div>
-    <p>Mgr. Václav Sýkora</p>
-    <p>Jednatel firmy</p>
-    <p>&nbsp;</p>
-  </div>
-</div>
-
-
-</div> <!-- .list-authors -->
-
-
-</div>
 
 
 
