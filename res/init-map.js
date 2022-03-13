@@ -40,7 +40,7 @@
         var marker = new google.maps.Marker({
           position:props.coords,
           map:map,
-          icon: "https://psychiatrie-ambulance.cz/wp-content/uploads/2021/03/icon-map.png",
+          icon: "https://psychiatrie-ambulance.cz/wp-content/uploads/2022/03/map-pin.png",
         });
 
         if(props.iconImage){

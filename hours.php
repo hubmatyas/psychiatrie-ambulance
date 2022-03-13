@@ -59,12 +59,14 @@ function hideNow(e) {
 
 
 <div class="schedule">
-  <div id="linkDiv">
-   <button id="monday" onclick="showDiv('1');return false">Pondělí</button>
-   <button onclick="showDiv('2');return false">Úterý</button>
-   <button onclick="showDiv('3');return false">Středa</button>
-   <button onclick="showDiv('4');return false">Čtvrtek</button>
-   <button onclick="showDiv('5');return false">Pátek</button>
+  <div class="carousel-nav">
+   <ul>
+		 <li><a dataSlide="1" class="active">Pondělí</a></li>
+     <li><a dataSlide="2">Úterý</a></li>
+     <li><a dataSlide="3">Středa</a></li>
+     <li><a dataSlide="4">Čtvrtek</a></li>
+     <li><a dataSlide="5">Pátek</a></li>
+   </ul>
   </div>
 
   <div id="scheduleContent">
@@ -75,7 +77,7 @@ function hideNow(e) {
 
 
 <!-- PONDĚLÍ -->
-   <section id="day1">
+   <section title="pondělí">
 
      <div>
        <p><b>RONDEL A1</b> <br><span>08:00 - 13:30</span><br>MUDr. Eva Jílková</p>
@@ -140,7 +142,7 @@ function hideNow(e) {
 
 
 <!-- ÚTERÝ -->
-   <section id="day2">
+   <section title="Úterý">
 
      <div><p><b>RONDEL A1</b> <br><span>08:00 - 16:00</span><br>MUDr. Veronika Sýkorová</p>
        <address class="contactButtons">
@@ -236,7 +238,7 @@ function hideNow(e) {
 
 
 <!-- STŘEDA -->
-   <section id="day3">
+   <section title="středa">
 
      <div><p><b>PLASY, Potoční 546</b> <br><span>08:30 - 16:00</span><br>MUDr. Gabriela Valašiková</p>
        <address class="contactButtons">
@@ -307,7 +309,7 @@ function hideNow(e) {
    </section>
 
 <!-- ČTVRTEK -->
-   <section id="day4">
+   <section title="Čtvrtek">
      <div><p><b>TŘEMOŠNÁ A2</b> <br><span>08:30 - 14:00</span><br>MUDr. Jana Bytelová</p>
        <address class="contactButtons">
          <a href="tel:+420601165441">
@@ -366,7 +368,7 @@ function hideNow(e) {
    </section>
 
 <!-- PÁTEK -->
-    <section id="day5">
+    <section title="Pátek">
       <div><p><b>RONDEL A4</b> <br><span style="font-weight: 400;color: #707070;">(po telefonické domluvě)</span><br>Mgr. Michaela Fialová</p>
         <address class="contactButtons">
           <a href="tel:+420773550388">
@@ -405,31 +407,5 @@ function hideNow(e) {
   </div>
 
 </div> <!-- wrapper -->
-
-<script>
-
-document.getElementById('day1').style.display = 'block';
-
-function triggerFocus(element) {
-    var eventType = "onfocusin" in element ? "focusin" : "focus",
-        bubbles = "onfocusin" in element,
-        event;
-
-    if ("createEvent" in document) {
-        event = document.createEvent("Event");
-        event.initEvent(eventType, bubbles, true);
-    }
-    else if ("Event" in window) {
-        event = new Event(eventType, { bubbles: bubbles, cancelable: true });
-    }
-
-    element.focus();
-    element.dispatchEvent(event);
-}
-
-var monday = document.getElementById("monday");
-
-triggerFocus(monday);
-</script>
 
 <?php get_footer(); ?>

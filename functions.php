@@ -4,6 +4,8 @@
 
 function load_stylesheets()
 {
+  wp_register_style('slick', get_bloginfo('template_directory') . '/res/slick.min.css', array(), false, 'all');
+  wp_enqueue_style('slick');
   wp_register_style('main', get_bloginfo('template_directory') . '/style.css', array(), false, 'all');
   wp_enqueue_style('main');
 }

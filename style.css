@@ -301,86 +301,101 @@ header .wrapper {
      text-align: center;
      min-height: 80vh;
 }
- #linkDiv {
+ .carousel-nav ul {
      display: flex;
      justify-content: center;
      align-items: center;
      margin: 3.6rem 0;
      column-gap: 1.2rem;
+     padding: 0;
 }
- #linkDiv button {
-     color: var(--blue);
-     background-color: #fff;
-     padding: 0.8rem 1.2rem;
+.carousel-nav li {
+  padding: 0;
+  list-style: none;
+}
+ .carousel-nav a {
+     color: var(--grey);
+     background: var(--lightgrey);
+     border: 1px solid rgba(0,0,0,0.1);
+     padding: 0.4rem 1.2rem;
      -webkit-border-radius: .3em;
      -moz-border-radius: .3em;
      -o-border-radius: .3em;
      border-radius: .3em;
-     font-weight: 600;
-     text-transform: uppercase;
+     font-weight: 500;
+     background: transparent;
 }
- #linkDiv button:hover, #linkDiv button:focus {
-     background-color: var(--blue);
-     color: white;
+.carousel-nav a.active {
+  background: var(--blue);
+  color: #fff;
+  border: 1px solid var(--blue);
+}
+ .carousel-nav a:hover {
+     background: var(--darkblue);
+     border: 1px solid var(--darkblue);
+     color: #fff;
      cursor: pointer;
+     text-decoration: none;
 }
- #linkDiv button:last-child {
+ .carousel-nav a:last-child {
      margin-right: 0;
 }
- #day1, #day2, #day3, #day4, #day5 {
-     display:none;
-     min-height: 30vh;
-     overflow:hidden;
-     padding: 1.2rem 0;
-     border-radius: .3em;
-     -webkit-border-radius: .3em;
-     -moz-border-radius: .3em;
-     -o-border-radius: .3em;
+#daysInAWeek section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  column-gap: 1.8rem;
+  row-gap: 1.8rem;
 }
  #daysInAWeek section div {
-     vertical-align: top;
-     text-align: center;
      width: 20%;
      min-height: 8em;
-     display: inline-block;
-     padding: 1em;
+     padding: 1.2rem;
+     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-     border-radius: .3em;
-     -webkit-border-radius: .3em;
-     -moz-border-radius: .3em;
-     -o-border-radius: .3em;
+     border-radius: .5em;
+     -webkit-border-radius: .5em;
+     -moz-border-radius: .5em;
+     -o-border-radius: .5em;
      color: var(--grey);
      transition: .3s;
+     border: 1px solid rgba(0,0,0,0.1);
      border-bottom: 1px solid var(--blue);
      font-weight: 300;
-     margin: 1em .5em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
 }
  #daysInAWeek section div:hover {
-     border-bottom: 1px solid var(--pink);
+     border-bottom: 1px solid var(--darkblue);
 }
  #daysInAWeek section div b:first-child {
-     color: var(--blue);
+     color: var(--grey);
      font-size: 1.6rem;
+     line-height: 2.6rem;
      font-weight: 500;
 }
  #daysInAWeek section div span{
-     color: var(--pink) !important;
-     font-weight: 600;
+     color: var(--blue) !important;
+     font-weight: 500;
      font-style: normal;
 }
  .contactButtons {
-     margin: 1.2rem 2.4rem 0 2.4rem;
+     margin: auto 2.4rem 0 2.4rem;
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     grid-column-gap: 1vh;
+     column-gap: 3.2rem;
      height: auto;
      -webkit-transition: .3s all ease-in-out;
      -moz-transition: .3s all ease-in-out;
      -o-transition: .3s all ease-in-out;
      transition: .3s all ease-in-out;
+     padding-top: 1.8rem;
 }
  .contactButtons a svg{
-     height: 2.4rem;
+     height: 1.8rem;
      width: auto;
 }
  .contactButtons a:hover svg path {
@@ -388,7 +403,7 @@ header .wrapper {
      -moz-transition: .3s all ease-in-out;
      -o-transition: .3s all ease-in-out;
      transition: .3s all ease-in-out;
-     fill: var(--pink);
+     fill: var(--darkblue);
 }
  footer {
      bottom: 0;
@@ -532,18 +547,21 @@ footer a:hover {
      -moz-border-radius: .3em;
      -o-border-radius: .3em;
      border-radius: .3em;
+     font-size: 1.4rem;
+     line-height: 2.4rem;
 }
  .wpcf7-form input[type="submit"] {
      color: white;
      background: var(--blue);
      font-weight: 600;
-     font-size: 1em;
      text-transform: uppercase;
      cursor: pointer;
      width: 50%;
      display: block;
      margin: 0 auto;
      margin-top: 2em;
+     font-size: 1.4rem;
+     line-height: 2.4rem;
 }
  .wpcf7-form label {
      margin-top: 1.2rem;
@@ -794,94 +812,23 @@ footer a:hover {
      backdrop-filter: blur(2px);
      -webkit-backdrop-filter: blur(2px);
 }
-/* GDPR Consent */
- #consent-popup {
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     padding: 1em 4em;
-     background-color: #fff;
-     font-size: 1em;
-     font-weight: 300;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     -webkit-box-shadow: 0px -3px 17px -5px rgba(222,222,222,1);
-     -moz-box-shadow: 0px -3px 17px -5px rgba(222,222,222,1);
-     -o-box-shadow: 0px -3px 17px -5px rgba(222,222,222,1);
-     box-shadow: 0px -3px 17px -5px rgba(222,222,222,1);
-     -webkit-transition: all 1s ease-out;
-     -moz-transition: all 1s ease-out;
-     -o-transition: all 1s ease-out;
-     transition: all 1s ease-out;
-}
- #consent-popup.hidden {
-     opacity: 0;
-     bottom: -10em;
-}
- #consent-popup .consent-text {
-     padding: .5em 0;
-     vertical-align: middle;
-}
- #consent-popup .consent-buttons {
-     text-align: right;
-}
- #consent-popup .consent-buttons * {
-     padding: .5em 1em;
-     text-decoration: none;
-     border-radius: .3em;
-     -webkit-border-radius: .3em;
-     -moz-border-radius: .3em;
-     font-weight: 600;
-}
- #consent-popup .consent-buttons #accept {
-     background-color: var(--blue);
-     color: #fff;
-     margin-right: 1em;
-     cursor: pointer;
-}
- #consent-popup .consent-buttons #accept:hover {
-     color: #fff;
-     background: var(--pink);
-}
- #consent-popup .consent-buttons .more-info {
-     color: var(--green);
-     background: #fff;
-}
- #consent-popup .consent-buttons .more-info:hover {
-     color: var(--grey);
-}
- @media only screen and (max-width: 900px) {
-     #consent-popup {
-         display: block;
-    }
-     #consent-popup .consent-text {
-         padding: 0 0 1em 0;
-    }
-     #consent-popup .consent-buttons {
-         text-align: left;
-         padding-bottom: 1em;
-    }
-}
+
  @media only screen and (max-width: 600px) {
-     #consent-popup {
-         padding: 1em;
-    }
-     #consent-popup .consent-buttons {
-         text-align: center;
-    }
-    #linkDiv {
+
+    .carousel-nav {
       column-gap: 0.8rem;
       padding: 0.6rem 1rem;
     }
-    #linkDiv button {
+    .carousel-nav a {
       background: var(--blue);
       color: #fff;
       font-size: 1.2rem;
       line-height: 1.6rem;
     }
-    #linkDiv button:hover, #linkDiv button:focus {
+    .carousel-nav a:hover {
+      background: var(--darkblue);
+    }
+    .carousel-nav a:active {
       background: var(--pink);
     }
 }
@@ -1096,4 +1043,72 @@ footer a:hover {
  .list-authors-box .box-info {
    min-height: auto;
  }
+}
+
+.freeprivacypolicy-com---reset {
+  font-family: 'Poppins', sans-serif !important;
+}
+.freeprivacypolicy-com---nb-simple {
+  bottom: 1.8rem !important;
+  right: 1.8rem !important;
+  max-width: 50rem !important;
+}
+.freeprivacypolicy-com---nb .cc-nb-main-container {
+  padding: 1.8rem !important;
+}
+.freeprivacypolicy-com---palette-light .cc-nb-title {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+  line-height: 2.4rem;
+}
+.freeprivacypolicy-com---palette-light .cc-nb-title,
+.freeprivacypolicy-com---palette-light .cc-nb-text {
+  color: var(--grey) !important;
+}
+.freeprivacypolicy-com---nb .cc-nb-text {
+  font-size: 1.2rem !important;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+.freeprivacypolicy-com---nb .cc-nb-okagree, .freeprivacypolicy-com---nb .cc-nb-reject, .freeprivacypolicy-com---nb .cc-nb-changep {
+  padding: 0.4rem 1.2rem;
+  font-size: 1.2rem !important;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -o-border-radius: .25rem;
+  border-radius: .25rem;
+  font-weight: 500 !important;
+  margin-right: 1.2rem;
+  margin-right: 0.8rem !important;
+}
+.freeprivacypolicy-com---palette-light .cc-nb-okagree,
+.freeprivacypolicy-com---palette-light .cc-nb-reject {
+  background: var(--blue) !important;
+}
+.freeprivacypolicy-com---palette-light.freeprivacypolicy-com---nb {
+  background-color: #fff !important;
+  border: 1px solid rgba(0,0,0,0.1);
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 2px 5px 2px rgb(0 0 0 / 10%);
+    box-shadow: 0px 2px 5px 2px rgb(0 0 0 / 10%);
+}
+.freeprivacypolicy-com---reset p {
+  margin-bottom: 0.8rem !important;
+}
+
+@media only screen and (max-width: 50rem) {
+  .freeprivacypolicy-com---nb-simple {
+    bottom: 0rem !important;
+    right: 0rem !important;
+    max-width: 100% !important;
+  }
+  .freeprivacypolicy-com---palette-light.freeprivacypolicy-com---nb {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
 }

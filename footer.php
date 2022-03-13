@@ -20,17 +20,40 @@
 </div>
 
 </footer>
+<!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="https://www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"cs","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Psychiatrie-ambulance.cz"});
+});
+</script>
 
+<!-- Google Analytics -->
 
-	   <div id="consent-popup" class="hidden">
-        <p class="consent-text">Naše webové stránky používají k&nbsp;poskytování služeb a&nbsp;analýze návštěvnosti soubory cookie. Používáním souhlasíte s&nbsp;použitím souborů cookie.</p><div class="consent-buttons"><span id="accept">Souhlasím</span><a class="more-info" href="/gdpr">Zjistit&nbsp;více...</a></div>
-</div>
+		<script type="text/plain" cookie-consent="tracking">
+window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-    <?php if (is_front_page()):?>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUEVlByzT8CL183iWpsB3yKLbSfHZ4qFM&map_ids=54220ee84d2e31ca" async></script>
-    <script src="/wp-content/themes/psychiatric/res/init-map.js"></script>
+			gtag('config', 'G-W3LY67WLWZ');
+</script>
+<!-- end of Google Analytics-->
+
+<!-- End Cookie Consent -->
+<?php
+if (is_front_page()):?>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUEVlByzT8CL183iWpsB3yKLbSfHZ4qFM&map_ids=54220ee84d2e31ca" async></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/res/init-map.js"></script>
+<?php
+endif;
+
+if (is_page('ordinacni-hodiny')):
+?>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/res/jquery.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/res/slick.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/res/slick-init.js"></script>
 <?php endif; ?>
-  <script src="/wp-content/themes/psychiatric/res/main.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/res/main.js"></script>
 </script>
 </body>
 </html>
